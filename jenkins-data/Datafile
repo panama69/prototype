@@ -1,0 +1,7 @@
+#Very simple dockerfile used to create a data-container volume
+FROM jenkins
+
+VOLUME ["/var/jenkins_home"]
+USER jenkins
+
+CMD ["echo", "Data container for Jenkins"]
